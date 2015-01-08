@@ -10,15 +10,19 @@ package calculadora_avanzada;
  *
  * @author vesprada
  */
+ 
 public class CALCULADORA_AVANZADA {
-
+import java.utils.Scanner
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner introducir=new Scanner(System.in); 
+     
         System.out.println("Calculadora avanzada.");
-          System.out.println("Introducir ");
+        System.out.println("Introducir ");
+        
+        
         
         switch (menu) {
             case 1:  monthString = "January";
