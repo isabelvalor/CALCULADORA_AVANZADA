@@ -17,7 +17,8 @@ public class CALCULADORA_AVANZADA {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.print("calculadora avanzada");
+        System.out.println("Calculadora avanzada.");
+        System.out.println("Elige una opcion: ");
     }
     
 }
