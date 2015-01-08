@@ -18,7 +18,7 @@ public class CALCULADORA_AVANZADA {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Calculadora avanzada.");
-         int menu=6;
+         int menu=8;
          
         switch (menu) {
             case 1:  monthString = "January";
