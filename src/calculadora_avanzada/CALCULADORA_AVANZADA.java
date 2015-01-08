@@ -21,32 +21,35 @@ import java.utils.Scanner
      
         System.out.println("Calculadora avanzada.");
         System.out.println("Introducir ");
-        
-        
+        System.out.println("Elige una opcion: ");
+        menu=introducir.nextInt();
         
         switch (menu) {
-            case 1:  monthString = "January";
+            case 1:  
+             
                      break;
-            case 2:  monthString = "February";
+            case 2: 
+             
                      break;
-            case 3:  monthString = "March";
+            case 3: 
                      break;
-            case 4:  monthString = "April";
+            case 4:  
+             
                      break;
-            case 5:  monthString = "May";
+            case 5: 
+           
                      break;
-            case 6:  monthString = "June";
+            case 6:  
                      break;
-            case 7:  monthString = "July";
+            case 7:  
                      break;
-            case 8:  monthString = "August";
+            case 8:  
                      break;
-            default: monthString = "Invalid month";
-                     break;
+           
         }
         
         
-        System.out.println("Elige una opcion: ");
+       
     }
     
 }
