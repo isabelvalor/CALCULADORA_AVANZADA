@@ -5,65 +5,68 @@
  */
 
 package calculadora_avanzada;
-
+import java.util.Scanner;
+import java.lang.Math ;
 /**
  *
  * @author vesprada
  */
+ 
 public class CALCULADORA_AVANZADA {
 
     /**
      * @param args the command line arguments
      */
-    /*
- * calculadora01.java
- */
-
-import java.util.Scanner;
-	
-	public static void main (String args[]) {
-		Scanner introducir;
-		introducir=new Scanner(System.in);
-		
-		int a,b;
-		String op;
-		
-		System.out.print("Introduce el primer numero: ");
-		a=introducir.nextInt();
-		
-		System.out.print("Introduce el operador: ");
-		op=introducir.nextLine(); // este absorbe el intro
-		op=introducir.nextLine(); // este absorbe el operador
-		
-		switch(op){
-			case "+":
-				System.out.print("Introduce el segundo numero: ");
-				b=introducir.nextInt();
-				System.out.print("suma= "+(a+b));
-				break;
-			case "-":
-				System.out.print("Introduce el segundo numero: ");
-				b=introducir.nextInt();
-				System.out.print("resta= "+(a-b));
-				break;
-			
-			case "*":
-				System.out.print("Introduce el segundo numero: ");
-				b=introducir.nextInt();
-				System.out.print("mult= "+(a*b));
-				break;
-						
-			case "/":
-				double aa, bb;
-				aa= (double)a;
-				do{
-					System.out.print("Introduce el segundo numero: ");
-					bb=introducir.nextInt();
-					if(bb!=0) System.out.print("division= "+(aa/bb)+"\n");
-					else System.out.println("Vuelve a introducir");
-					}while(bb==0);
-				break;
-			default: System.out.print("Has introducido mal el operador!");
-			}
-	}
+    public static void main(String[] args) {
+        Scanner introducir=new Scanner(System.in); 
+        int menu,x,y,i=0,resultado=0;
+        double resul=0;
+        System.out.println("Calculadora avanzada.");
+        System.out.println("Introducir ");
+        System.out.println("Elige una opcion: ");
+        menu=introducir.nextInt();
+        
+        switch (menu) {
+            case 1: 
+                System.out.println("introduce el primer numero");
+                x=introducir.nextInt();
+                System.out.println("introduce el segundo numero");
+                y=introducir.nextInt();
+                resultado=x+y;
+                System.out.println("el sesultado es "+resultado);
+                     break;
+            case 2: 
+                     break;
+            case 3: 
+                System.out.println("introduce el primer numero");
+                x=introducir.nextInt();
+                System.out.println("introduce el segundo numero");
+                y=introducir.nextInt();
+                resultado=x*y;
+                System.out.println("el sesultado es "+resultado);
+                
+                     break;
+            case 4:  
+             
+                     break;
+            case 5: 
+                System.out.println("introduce el numero");
+                x=introducir.nextInt();
+                System.out.println("introduce el exponente");
+                y=introducir.nextInt();
+                
+                resul=Math.pow(x,y);
+                
+                System.out.println("el sesultado es "+resultado);
+                
+                     break;
+            case 6:  
+                     break;
+            
+        }
+        
+        
+       
+    }
+    
 }
