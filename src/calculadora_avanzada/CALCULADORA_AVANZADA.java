@@ -27,7 +27,7 @@ public class CALCULADORA_AVANZADA {
         menu=introducir.nextInt();
         
         switch (menu) {
-            case 1: 
+            case 1: //suma
                 System.out.println("introduce el primer numero");
                 x=introducir.nextInt();
                 System.out.println("introduce el segundo numero");
@@ -37,7 +37,7 @@ public class CALCULADORA_AVANZADA {
                      break;
             case 2: 
                      break;
-            case 3: 
+            case 3: //multiplicacion
                 System.out.println("introduce el primer numero");
                 x=introducir.nextInt();
                 System.out.println("introduce el segundo numero");
@@ -49,7 +49,7 @@ public class CALCULADORA_AVANZADA {
             case 4:  
              
                      break;
-            case 5: 
+            case 5: //potencia
                 System.out.println("introduce el numero");
                 x=introducir.nextInt();
                 System.out.println("introduce el exponente");
